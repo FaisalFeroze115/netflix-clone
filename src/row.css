@@ -1,9 +1,13 @@
+.row{
+    margin-left: 20px;
+}
 .row__poster{
     width: 100%;
     object-fit: contain;
     max-height: 100px;
     transition: transform 450ms;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .row__posters{
@@ -11,6 +15,7 @@
     overflow-y: hidden;
     overflow-x: scroll;
     padding: 20px;
+    
 }
 
 .row__posters::-webkit-scrollbar{
@@ -20,5 +25,12 @@
 
 .row__poster:hover{
     transform: scale(1.08);
+}
 
+.row__posterLarge{
+    max-height: 250px;
+}
+
+.row__posterLarge:hover{
+    transform: scale(1.09);
 }
